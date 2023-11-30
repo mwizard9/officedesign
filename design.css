@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@700&&family=Montserrat:wght@400;500;600&display=swap');
 .sidebar {
   box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
   width: 90px;
@@ -21,6 +21,7 @@ ul li a:hover {
 }
 .maincontant{
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -30,12 +31,14 @@ ul li a:hover {
 
 .label {
   font-size: 12px;
+  font-weight: 500;
 }
 
 .custom-input {
-  height: 30px;
+  height: 22px;
   border-radius: 8px;
   border-color: #123f6b;
+  margin-top: 7px;
 }
 .container-fluid{
     max-width: 98vw;
@@ -67,6 +70,7 @@ hr {
 .companyinfo {
   font-size: 20px;
   color: #123f6b;
+  font-weight: 600;
 }
 
 .buttoncontainer {
@@ -90,7 +94,9 @@ hr {
 }
 
 .data {
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+  font-weight: 400;
 }
 
 tr:first-child th:first-child {
@@ -110,6 +116,7 @@ form {
     font-size: 16px;
     display: inline-block;
     position: relative;
+    font-weight: 600;
 }
 
 .content span::before,
@@ -164,6 +171,6 @@ form {
         align-items: center;
     }
     .maincontant{
-        max-width: 75vw;
+        max-width: 70vw;
     }
 }
