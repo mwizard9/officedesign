@@ -1,0 +1,138 @@
+.sidebar {
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
+  width: 90px;
+  transition: width 0.3s ease;
+}
+.sidebar span {
+  color: #123f6b;
+}
+ul li a {
+  width: 200px;
+}
+ul li a:hover {
+  border: 1px solid #5c6bc0;
+  background-color: #e8eaf6;
+}
+.formcontent {
+  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
+  min-height: 70vh;
+}
+
+.firstsidebar {
+  min-height: 60vh;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.custom-input {
+  height: 30px;
+  border-radius: 8px;
+  border-color: #123f6b;
+}
+.container-fluid{
+    max-width: 98vw;
+}
+
+.sidecol span {
+  display: none !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.sidebar:hover .sidecol span {
+  display: inline-block !important;
+}
+.logo{
+    max-height: 30px;
+}
+.sidebar:hover {
+  width: 232px;
+  transition: width 0.3s ease;
+}
+
+.companyinfo {
+  font-size: 20px;
+  color: #123f6b;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  background-color: #123f6b;
+  max-width: 90px;
+  border-radius: 0px 40px 0px 40px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+.tbhead {
+  background-color: #123f6b !important;
+  font-size: 15px;
+  color: white !important;
+}
+
+.data {
+  font-size: 15px;
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+tr:last-child th:last-child {
+  border-top-right-radius: 10px;
+}
+form {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.content{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.content span {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.content span::before,
+.content span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent 0%, #5c6bc0 50%, transparent 100%);
+}
+
+.content span::before {
+    left: 0;
+}
+
+.content span::after {
+    right: 0;
+}
+
+.content span {
+    padding: 0 10px; 
+    color: #5c6bc0;
+    background: white; 
+}
+.dark-sidebar {
+    background-color: #333 !important; 
+    
+  }
+  .dark-sidebar span{
+   color: white !important;
+    
+  }
+  .dark-sidebar span:hover{
+    color: black !important;
+     
+   }

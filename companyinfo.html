@@ -7,48 +7,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    
+    <title>Company Information</title>
     <style>
-        .sidebar {
-            box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
-            width: 90px;
-        }
-
-        .sidecol span {
-            display: none !important;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 24px;
-        }
-
-        .sidebar:hover .sidecol span {
-            display: inline-block !important;
-
-        }
-
-        .sidebar:hover {
-            width: 232px;
-
-        }
-    </style>
+        
+      </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-3 px-sm-2 px-0 bg-white sidebar">
+        <div class="row flex-nowrap min-vh-100">
+            <!-- sidebar start -->
+            <div class="col-auto col-md-3 col-xl-3 px-sm-2 px-0 bg-white sidebar" id="SidebarId">
                 <div class="container my-3">
-                    <a href="#" class="d-flex align-items-center text-blue text-decoration-none" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="manager" width="40" height="40"
-                            class="rounded-circle">
+                    <a href="#" class="d-flex align-items-center text-blue text-decoration-none logo" aria-expanded="false">
+                        <img src="./assets//logo.png" alt="manager" width="40" height="40" class="rounded-circle">
                         <div class="d-flex flex-column sidecol">
                             <span class="d-none d-sm-inline mx-1">ISHWOR CHAUDHARI</span>
                             <span class="d-none d-sm-inline mx-1 text-black">BRANCH MANAGER</span>
                         </div>
                     </a>
                 </div>
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidecol"
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidecol firstsidebar"
                         id="menu">
                         <li class="nav-item ">
                             <a href="#" class="nav-link align-middle px-0">
@@ -90,39 +72,162 @@
                         </li>
                     </ul>
 
-                   
-                        <ul
-                            class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidecol">
-                            <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-question-circle"></i> <span
-                                        class="ms-1 d-none d-sm-inline">HELP CENTER</span></a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                    <i class="bi bi-box-arrow-in-right"></i> <span
-                                        class="ms-1 d-none d-sm-inline">LOGOUT</span></a>
 
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                    <i class="bi bi-moon"></i> <span class="ms-1 d-none d-sm-inline">NIGHT MODE <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"></span>
-                                    
-                                </a>
-                            </li>
-                        </ul>
-                        
-                    
+                    <ul
+                        class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidecol">
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="bi bi-question-circle"></i> <span class="ms-1 d-none d-sm-inline">HELP
+                                    CENTER</span></a>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="bi bi-box-arrow-in-right"></i> <span
+                                    class="ms-1 d-none d-sm-inline">LOGOUT</span></a>
+
+                        </li>
+                        <li>
+           
+                            
+                            <a href="#" class="nav-link px-0 align-middle d-flex" id="nightModeToggle">
+                                <i class="bi bi-moon"></i> <span class="ms-1 d-none d-sm-inline">NIGHT MODE</span>
+                                <div class="form-check form-switch mx-2">
+                                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div>
+                              </a>
+                               
+                        </li>
+                    </ul>
+
                 </div>
             </div>
-            <div class="col py-3">
-                Content area...
+            <!-- sidebar end -->
+
+            <!-- main container start -->
+            <div class="col py-5 row">
+
+
+                <div class="col-md-9 formcontent">
+                    <!-- form start -->
+                    <div class="my-5 ">
+                        <span class="companyinfo">Company Information</span>
+                    </div>
+                    <form class="row gy-2 gx-3 align-items-center">
+
+                        <div class="col-md-4 d-flex my-2">
+                            <label class="mt-2 label" for="nameInput">Name</label>
+                            <input type="text" class="form-control mx-3 custom-input" id="nameInput">
+                        </div>
+                        <div class="col-md-4 d-flex my-2">
+                            <label class="mt-2 label" for="addressInput">Address</label>
+                            <input type="text" class="form-control mx-3 custom-input" id="addressInput">
+                        </div>
+                        <div class="col-md-4 d-flex my-2">
+                            <label class="mt-2 label" for="contactInput">Contact</label>
+                            <input type="text" class="form-control custom-input mx-3" id="contactInput">
+                        </div>
+                        <div class="col-md-4 d-flex my-2">
+                            <label class="mt-2 label" for="contactPersonInput">Contact Person</label>
+                            <input type="text" class="form-control mx-3 custom-input mt-1" id="contactPersonInput">
+                        </div>
+                        <div class="buttoncontainer">
+                            <button type="button" class="btn button" onclick="saveData()">Save</button>
+                        </div>
+
+                    </form>
+                    <!-- form end -->
+                    <!-- table start -->
+
+                    <table class="table my-4" >
+                        <thead>
+                            <tr>
+                                <th class="tbhead" scope="col">Name</th>
+                                <th class="tbhead" scope="col">Address</th>
+                                <th class="tbhead" scope="col">Contact</th>
+                                <th class="tbhead" scope="col">Contact Person</th>
+                                <th class="tbhead" scope="col">Action</th>
+                            </tr>
+
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td class="data" scope="row">Uranus Tech Nepal Pvt. Ltd</td>
+                                <td class="data">Bijulibajar 10, Kathmandu</td>
+                                <td class="data">+977-01-5244670</td>
+                                <td class="data">Nirajan Rijal</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <!-- table end -->
+
+
+                </div>
+                <div class="content col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <span class="fw-bold">General Setup</span>
+                    <span>Company Info</span>
+                    <span>Currancy</span>
+                    <span>Time Zone</span>
+                    <span>Financial Year End</span>
+                    <span>Title</span>
+                    <span>Gender</span>
+                    <span>Religion</span>
+                    <span>Nationality</span>
+                    <span>Language</span>
+                    <span>Employee Type</span>
+                    <span>Position</span>
+                    <span>Faculty List</span>
+                    <span>Spaciolization List</span>
+                    <span>License Type</span>
+                    <span>Document Type</span>
+                    <span>Vehicle Type</span>
+                    <span>Family Status</span>
+                    <span>Occupation</span>
+                    <span>Relation</span>
+
+                </div>
             </div>
+
         </div>
     </div>
+    </div>
 
+   
+    <script src="design.js"></script>
+    <script>
+        function saveData() {
+            // Get form inputs
+            var name = document.getElementById('nameInput').value;
+            var address = document.getElementById('addressInput').value;
+            var contact = document.getElementById('contactInput').value;
+            var contactPerson = document.getElementById('contactPersonInput').value;
 
+            // Get table body
+            var tableBody = document.getElementById('tableBody');
 
+            // Create a new row
+            var newRow = tableBody.insertRow();
+
+            // Insert cells with data
+            newRow.insertCell().innerText = name;
+            newRow.insertCell().innerText = address;
+            newRow.insertCell().innerText = contact;
+            newRow.insertCell().innerText = contactPerson;
+
+            // Add an "Action" cell with a delete button
+            var actionCell = newRow.insertCell();
+            var deleteButton = document.createElement('button');
+            deleteButton.innerHTML = 'Delete';
+            deleteButton.onclick = function() {
+                // Remove the row when the delete button is clicked
+                tableBody.removeChild(newRow);
+            };
+            actionCell.appendChild(deleteButton);
+
+            // Clear form inputs after saving
+            document.getElementById('myForm').reset();
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
