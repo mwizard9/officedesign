@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@700&display=swap');
 .sidebar {
   box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
   width: 90px;
@@ -5,6 +6,7 @@
 }
 .sidebar span {
   color: #123f6b;
+  
 }
 ul li a {
   width: 200px;
@@ -14,8 +16,12 @@ ul li a:hover {
   background-color: #e8eaf6;
 }
 .formcontent {
-  box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.3);
-  min-height: 70vh;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  min-height: 80vh;
+}
+.maincontant{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    
 }
 
 .firstsidebar {
@@ -40,6 +46,11 @@ ul li a:hover {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  font-family:'Inter', sans-serif;
+}
+hr {
+    color: #141313; 
+    width: 40px;
 }
 
 .sidebar:hover .sidecol span {
@@ -136,3 +147,23 @@ form {
     color: black !important;
      
    }
+
+   @media (max-width: 575px) {
+   
+    ul li a {
+        width: auto;
+    }
+    ul li a:hover{
+        width: 200px;
+    }
+    .imputform{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 250px;
+        align-items: center;
+    }
+    .maincontant{
+        max-width: 75vw;
+    }
+}
